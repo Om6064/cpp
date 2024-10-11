@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a=10;
+    int b=20;
+
+    cout << "before" << b << endl;
+
+    b=50;
+
+    cout << "after" << b << endl;
+}
