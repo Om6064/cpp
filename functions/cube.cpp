@@ -4,7 +4,7 @@ using namespace std;
 
 void cube(int); // declaration
 
-int main()
+int main()//call
 {
     int n ;
 
@@ -18,7 +18,7 @@ int main()
     return 0;
 }
 
-void cube(int n)
+void cube(int n) // body
 {
 
     

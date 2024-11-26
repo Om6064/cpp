@@ -82,9 +82,6 @@ void ret(string a){
         count2++;
        }
        
-       
-        
-        
     }
     cout << "for character "<<count++<<endl;
     cout << "for number "<<count1++<<endl;
