@@ -21,7 +21,7 @@ int main()
     HEAD->next = current;
 
     current = new Node();
-    current->data = 77;
+    current->data = 7;
     current->next = nullptr;
     HEAD->next->next = current;
 
