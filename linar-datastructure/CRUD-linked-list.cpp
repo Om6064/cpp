@@ -29,11 +29,16 @@ public:
 
     void AddAtStart(int data)
     {
-        Node *newNode = new Node(data);
+       Node *newNode = new Node(data);
+       if (count == 0)
+       {
+        head = newNode;
+       }else{
         newNode->next = head;
         head = newNode;
-
-        this->count++;
+       }
+       
+       this->count++;
     }
     void AddAtEnd(int data)
     {
@@ -156,8 +161,8 @@ public:
             temp = temp->next;
         }
         temp->next = temp->next->next;
-        temp = NULL;
         delete temp;
+        temp = NULL;
         
         this->count--;
     }
