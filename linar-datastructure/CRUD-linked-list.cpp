@@ -161,9 +161,9 @@ public:
             temp = temp->next;
         }
         temp->next = temp->next->next;
+        // temp = NULL;
         delete temp;
-        temp = NULL;
-        
+
         this->count--;
     }
 };
