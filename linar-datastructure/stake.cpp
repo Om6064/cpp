@@ -28,6 +28,12 @@ public:
 };
 void Stake::push(int data)
 {
+    if (this->top == (capacity-1))
+    {
+        cout << "Array is overflow : "<<endl;
+        return;
+    }
+    
     this->top++;
     this->arr[top] = data;
     this->count++;
@@ -43,6 +49,11 @@ void Stake::display()
 }
 void Stake::pop()
 {
+     if (this->top == -1)
+    {
+        cout << "Array is underflow : "<<endl;
+        return;
+    }
     cout << arr[top] << " is deleted" << endl;
     arr[top] = 0;
     this->top--;
@@ -50,6 +61,11 @@ void Stake::pop()
 }
 void Stake::peek()
 {
+      if (this->top == -1)
+    {
+        cout << "Array is underflow : "<<endl;
+        return;
+    }
     cout << "--------LAST-ELEMENT--------\n";
     cout << arr[top] << endl;
 }
@@ -61,6 +77,9 @@ bool Stake::isEmpty()
 bool Stake::isfull()
 {
     return (top == capacity-1) ? true : false;
+}
+void Stake::size(){
+    cout <<" Element Size is : "<<this->count<<endl;
 }
 int main()
 {
@@ -132,6 +151,7 @@ int main()
         }
         case 7:
         {
+            stake.size();
             break;
         }
 
