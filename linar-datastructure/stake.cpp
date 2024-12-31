@@ -12,7 +12,7 @@ private:
 public:
     Stake(int size)
     {
-        size = capacity;
+        
         this->top = -1;
         this->arr = new int[capacity];
         this->count = 0;
