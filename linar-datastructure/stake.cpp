@@ -53,7 +53,7 @@ void Stake::pop()
     {
         cout << "Array is underflow : "<<endl;
         return;
-    }
+    } 
     cout << arr[top] << " is deleted" << endl;
     arr[top] = 0;
     this->top--;
