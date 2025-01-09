@@ -37,7 +37,7 @@ void insertion(vector<int> arr, int n)
     {
         key = arr[i];
         int j = i - 1;
-        while (j >= 0)
+        while (j >= 0)// 12 5 23 34 45 
         {
             if (arr[j] > key)
             {
