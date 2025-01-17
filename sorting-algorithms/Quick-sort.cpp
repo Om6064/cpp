@@ -45,16 +45,16 @@ void quickSort(vector<int> &arr, int start, int end)
     if (start >= end)
         return;
 
-    int pivotIndex = partition(arr, start, end); // Partition the array
+    int pivotIndex = partition(arr, start, end); 
 
-    quickSort(arr, start, pivotIndex - 1);       // Recursively sort the left part
-    quickSort(arr, pivotIndex + 1, end);         // Recursively sort the right part
+    quickSort(arr, start, pivotIndex - 1);       
+    quickSort(arr, pivotIndex + 1, end);        
 }
 
 int partition(vector<int> &arr, int start, int end)
 {
-    int pivot = arr[start]; // Use the first element as the pivot
-    int count=0,temp;      // Start scanning from the next element
+    int pivot = arr[start]; 
+    int count=0,temp;      
 
     for (int i = start; i <= end; i++)
     {
