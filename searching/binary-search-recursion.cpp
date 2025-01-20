@@ -60,7 +60,7 @@ void sort(vector<int> &arr, int size)
 }
 int binerySearch(vector<int> &arr, int start, int end, int key)
 {
-    if (start >= end)
+    if (start > end)
         return -1;
 
     int mid = (start + end) / 2;
